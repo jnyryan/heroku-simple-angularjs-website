@@ -46,9 +46,9 @@
       <div class="container">
         <a class="brand" href="#/page/home">heroku-simple-rack-site</a>
         <ul class="nav">
-          <li ng-class="{active: slug == 'home'}"><a href="#/">Home</a></li>
-          <li ng-class="{active: slug == 'about'}"><a href="#/about">About</a></li>
-          <li ng-class="{active: slug == 'contact'}"><a href="#/contact">Contact</a></li>
+          <li ng-class="{active:isActive('/')}"><a href="#/">Home</a></li>
+          <li ng-class="{active:isActive('/about')}"><a href="#/about">About</a></li>
+          <li ng-class="{active:isActive('/contact')}"><a href="#/contact">Contact</a></li>
         </ul>
       </div>
     </div>

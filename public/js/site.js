@@ -8,8 +8,10 @@ Site.config(function ($routeProvider) {
     .otherwise({redirectTo: '/home'});
 });
 
-function AppController ($scope, $rootScope, $http) {
-  
+function AppController ($scope, $location) {
+  	$scope.isActive = function(route) {
+        return route === $location.path();
+    }
 }
 
 function RouteCtrl ($scope, $rootScope, $routeParams) {
